@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAM INOSOFT 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+       <p class="title">Inosoft Bootcamp<br>Bootstrap Introducing</p>
+        <ul class="nav-link">
+            <li><a href="home" class="active">Home</a></li>
+            <li><a href="galery">Gallery</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact" class="contac">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.png" class="menu-btn">
+       </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <a href="" class="button-satu">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Galery -->
+    <section class="galery">
+        <div class="title2">
+            <h1>Galery</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="img/gambar2.jpg">
+                <h4>Kucing Satu</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum?</p>
+                <a href="" class="button-satu">Learn More</a>
+            </div>
+            <div class="column">
+                <img src="img/gambar3.jpg">
+                <h4>Kucing Dua</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum?</p>
+                <a href="" class="button-satu">Learn More</a>
+            </div>
+            <div class="column">
+                <img src="img/gambar4.jpg">
+                <h4>Kucing Tiga</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolorum?</p>
+                <a href="" class="button-satu">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="about-content">
+            <h1>ABOUT</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita commodi quae cumque nulla, necessitatibus esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, consequuntur! Consequatur unde, laborum et in nisi sequi necessitatibus laudantium consequuntur cupiditate sapiente dolores rerum labore pariatur harum id distinctio at optio voluptas facilis delectus repudiandae accusamus quibusdam neque. Eaque, quisquam?
+            </p>
+            <a href="" class="button-satu">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Contac -->
+    <div class="contact">
+        <div class="form-contact">
+            <h1>Contac Us</h1>
+            <div class="line"></div>
+            <label for="email" class="email">Masukan Email</label>
+            <input type="email" id="email"><br>
+            <label for="nama" class="nama">Nama Anda</label>
+            <input type="text" id="nama"><br>
+            <label for="pesan" class="pesan">Pesan</label>
+            <textarea name="pesan" id="pesan" cols="20" rows="10"></textarea>
+            <a href="" class="button-satu">Send Massage</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <section class="footer">
+        <p>Jln Tukad Pakerisan, Denpasar-Bali | Phone: 812-332-456 | Email: contac@example.com</p>
+        <p>Copyright @2023 Jean Warang</p>
+    </section>
+
+    <script>
+
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLink = document.querySelector('.nav-link');
+
+        menuBtn.addEventListener('click', () =>{
+            navLink.classList.toggle('mobile-menu'); 
+        });
+
+    </script>
+</body>
+</html>
